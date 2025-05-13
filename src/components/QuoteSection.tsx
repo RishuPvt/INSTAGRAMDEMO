@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import reel1 from "../public/reel1.mp4";
 import reel2 from "../public/reel2.mp4";
+import reel3 from "../public/reel3.mp4";
+import reel5 from "../public/reel5.mp4";
+import reel4 from "../public/reel4.mp4";
+
+
 
 const QuoteSection: React.FC = () => {
   const quotes = [
@@ -12,12 +17,12 @@ const QuoteSection: React.FC = () => {
     },
     {
       id: 2,
-      text: "On your special day, I want you to smile",
+      text: "Congratulation for your Result...  On your special day, I want you to smile ",
       author: "Me"
     },
     {
       id: 3,
-      text: "Yes , I know we are not together anymore but we are stranger with memory",
+      text: "Yes , I know we are not together anymore but we are stranger with memory ..i will wait for a day when you unblock me texted me with a message",
       author: "Me"
     },
     {
@@ -35,7 +40,7 @@ const QuoteSection: React.FC = () => {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [fadeIn, setFadeIn] = useState(true);
   const [currentReel, setCurrentReel] = useState(0);
-  const reels = [reel1, reel2];
+  const reels = [reel4, reel5 ];
 
   const goToNextQuote = () => {
     setFadeIn(false);
@@ -133,7 +138,7 @@ const QuoteSection: React.FC = () => {
         <video
           src={reels[currentReel]}
           controls
-          className="rounded-lg shadow-md w-full h-64 object-cover"
+          className="rounded-lg shadow-md w-full h-96 object-cover"
         />
         <button
           onClick={swapReel}

@@ -3,7 +3,10 @@ import { Play, Pause, SkipForward, SkipBack, Volume2, VolumeX } from 'lucide-rea
 import song1 from "../public/song1.mp3";
 import song2 from "../public/song2.mp3";
 import song3 from "../public/song3.mp3";
-import song4 from "../public/song4.mp3";
+import song5 from "../public/song5.mp3";
+import song6 from "../public/song6.mp3";
+
+
 
 
 const MusicPlayer: React.FC = () => {
@@ -12,7 +15,9 @@ const MusicPlayer: React.FC = () => {
     { id: 1, title: "Happy Birthday", artist: "For You", src: song1 },
     { id: 2, title: "Love Song", artist: "For You", src: song2},
     { id: 3, title: "Celebration", artist: "For You", src: song3 },
-    { id: 4, title: "Sweet Memories", artist: "For You", src: song4 },
+    { id: 4, title: "Sweet Memories", artist: "For You", src: song5 },
+    { id: 5, title: "For Us", artist: "For Us", src: song6 },
+
   ];
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
